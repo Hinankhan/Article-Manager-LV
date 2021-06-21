@@ -140,7 +140,7 @@ export default {
     addArticle(){
         if(this.edit === false){
             //Add aticle
-            fetch('/api/article',{
+            fetch('http://article-manager-lv.herokuapp.com/api/article',{
                 method:'post',
                 body:JSON.stringify(this.article),
                 headers:{
